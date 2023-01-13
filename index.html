@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <section class="forma">
+        
+        
+        <div id="title-desc">
+            <label for="title">TITLE*</label>
+            <br><br>
+            <input type="text" id="title" required onfocus="this.value=''">
+            <br><br>
+            <label for="desc">DESCRIPTION</label>
+            <br><br>
+            <textarea name="description" id="desc" rows="5" cols="30" onfocus="this.value=''"></textarea>
+            <button id="save">SAVE</button>
+        </div>
+
+        <div id="checkbox">
+            <div>PRIORITY</div>
+            <br>
+            <input type="radio" value="low" name="radAnswer" required="required">
+            <label for="Low"> Low</label>
+            <br>
+            <input type="radio" value="medium" name="radAnswer" >
+            <label for="Medium"> Medium</label>
+            <br>
+            <input type="radio" value="high" name="radAnswer" >
+            <label for="High"> High</label>
+            <button class="cancel">CANCEL</button>
+        </div>
+        
+    </section>
+    <section class="tasks">
+        <h1>My Tasks</h1>
+        <button class="add-task">+</button>
+        <div class="todo-wrapper">
+        </div>
+        <div class="message">Your task list is empty</div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

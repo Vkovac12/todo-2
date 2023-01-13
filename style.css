@@ -1,0 +1,144 @@
+body {
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.todo-wrapper .todo-item {
+    background-color: #FBFBFB;
+    padding: 14px 30px;
+    border-radius: 8px;
+    
+    box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    margin-bottom: 23px;
+}
+
+.todo-wrapper .todo-item:last-child {
+    margin-bottom: 0;
+}
+
+.todo-wrapper .todo-item:hover {
+    box-shadow: 3px 4px 18px -3px rgba(0, 0, 0, 0.31);
+}
+
+.todo-wrapper .todo-item .date {
+    color: #595959;
+    font-size: 12px;
+}
+
+.todo-wrapper .todo-item .Naslov {
+    font-size: 20px;
+    color: black;
+}
+
+.todo-wrapper .todo-item {
+    position: relative;
+}
+
+.todo-wrapper .todo-item:hover .delete {
+    display: block;
+}
+
+.todo-wrapper .delete {
+     position: absolute;
+     top: 8px;
+     right: 12px;
+     display: none;
+}
+
+.forma{
+    
+    background-color: #FBFBFB;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 12px;
+    display: none;
+    
+}
+
+#title-desc{
+    
+    padding: 14px 30px;
+    flex-direction: column;
+}
+
+#checkbox{
+    padding: 14px 30px;
+    margin-left: 10px;
+    
+}
+
+#save{
+    color: white;
+    background-color: #0082CB;
+    border-color: #0082CB;
+    border-radius: 5px;
+    margin-top: 78px;
+    font-size: 12px;
+    
+    width: 94px;
+    height: 34px;
+}
+
+.cancel{
+    color: #0082CB;
+    border-color: #0082CB;
+    border-radius: 5px;
+    margin-top: 168px;
+    margin-left: 146px;
+    font-size: 12px;
+    
+    width: 94px;
+    height: 34px;
+    
+}
+
+img{
+    display: block;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+.todo-wrapper .todo-item.done .naslov{
+    text-decoration: line-through;
+}
+
+.todo-wrapper .todo-item.low{
+    border-left: 8px solid green;
+}
+
+.todo-wrapper .todo-item.medium{
+    border-left: 8px solid yellow;
+}
+
+.todo-wrapper .todo-item.high{
+    border-left: 8px solid red;
+}
+
+.add-new{
+    display: flex;
+}
+
+.tasks{
+    
+    margin-left: 30px;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.tasks .add-task{
+    font-size: 36px;
+    border: none;
+}
+
+.message{
+    display:none
+}
+
+.no-tasks{
+    display:block;
+}
